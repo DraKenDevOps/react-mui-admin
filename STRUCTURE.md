@@ -6,8 +6,8 @@
 
 ```
 eyangwa-web/
-├── .env                          # Environment variables (REST API, MQTT)
-├── .env.example
+├── .env                          # Environment variables
+├── .env.example                  # Example Environment variables
 ├── .github/workflows/main.yml    # CI/CD (currently dummy)
 ├── .prettierrc.json              # semicolons, double quotes, 4-space tabs, 140 width
 ├── Dockerfile                    # node:20-alpine build → nginx:1.27.1-alpine serve
@@ -23,6 +23,7 @@ eyangwa-web/
 │   ├── env.ts                    # Type-safe environment config reader
 │   ├── index.css                 # Global CSS variables + utility classes
 │   ├── types.d.ts                # All TypeScript type definitions
+|   ├── theme.ts                    # MUI theme & palette
 │   ├── assets/
 │   │   ├── css/spinner.css
 │   │   └── images/               # Fingerprint images, logos, placeholders
@@ -104,7 +105,6 @@ eyangwa-web/
 │       ├── functions.ts          # JWT extraction utility
 │       ├── imgPreview.ts         # Canvas image preview utilities
 │       ├── mqclient.ts           # MQTT client singleton
-│       ├── mui.ts                # MUI theme & palette
 │       └── http_client.ts        # Reusable fetch instance + auth interceptor
 ├── tsconfig.json                 # Project references root
 ├── tsconfig.app.json             # ES2020, React JSX, bundler module resolution

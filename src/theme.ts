@@ -5,10 +5,29 @@ export function getTheme(mode: "light" | "dark") {
         palette: {
             mode,
             primary: {
-                main: "#1b75bb"
+                main: "#1b75bb",
+                light: "#598db4",
+                dark: "#013c69",
             },
             secondary: {
-                main: "#666666"
+                main: "#666666",
+                light: "#d6d6d6",
+                dark: "#272a2c",
+            },
+            error: {
+                main: "#ff3a1e",
+                light: "#ff7961",
+                dark: "#9c000a",
+            },
+            warning: {
+                main: "#ffc500",
+                light: "#ffef62",
+                dark: "#b2a429"
+            },
+            success: {
+                main: "#4caf50",
+                light: "#6fbf73",
+                dark: "#135f17"
             },
             ...(mode === "dark"
                 ? {

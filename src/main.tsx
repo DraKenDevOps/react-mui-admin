@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import { ThemeModeProvider, useThemeMode } from "./contexts/ThemeModeContext";
-import { getTheme } from "./utils/mui";
+import { getTheme } from "./theme";
 import App from "./App";
 import "./index.css";
 

@@ -9,5 +9,5 @@ const client = httpClient({
 });
 
 export async function login(username: string, password: string) {
-    return client.post<{ token: string }>("/auth/login", { username, password });
+    return client.post<{ token: string }>("/login", { username, password });
 }

@@ -11,6 +11,6 @@ const env = {
   MQTT_PATH: import.meta.env.VITE_APP_MQTT_PATH as string,
   MQTT_TOPIC: import.meta.env.VITE_APP_MQTT_TOPIC as string,
   LIMIT_FILE_SIZE: Number(import.meta.env.VITE_APP_LIMIT_FILE_SIZE) || 10,
-} as const
+}
 
 export default env
